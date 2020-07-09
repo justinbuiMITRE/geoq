@@ -22,7 +22,7 @@ DEBUG = True
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
-ALLOWED_HOSTS = ['localhost','127.0.0.1']
+ALLOWED_HOSTS = ['localhost','127.0.0.1', 'justinbui-GeoQ.mitre.org', '10.8.33.118']
 
 ADMINS = (
     ('Admin User', 'admin@domain.com'),
@@ -80,7 +80,7 @@ MEDIA_URL = '/images/'
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/var/www/example.com/static/"
 STATIC_URL_FOLDER = ''  # Can be set to something like 'geoq-test/' if the app is not run at root level
-STATIC_ROOT = '{0}{1}'.format('/var/www/static/', STATIC_URL_FOLDER)
+STATIC_ROOT = '{0}{1}'.format('var/www/static/', STATIC_URL_FOLDER)
 
 # URL prefix for static files.
 # Example: "http://example.com/static/", "http://static.example.com/"
