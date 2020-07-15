@@ -7,6 +7,8 @@ services:
       POSTGRES_PASSWORD: geoq
       POSTGRES_USER: geoq
       POSTGRES_DB: geoq
+    ports:
+      - "5432:5432"
 
   web:
     image: centos7
