@@ -12,6 +12,7 @@ sparkle_builder.$accordion = null;
 sparkle_builder.map = aoi_feature_edit.map;
 sparkle_builder.results_layer_group = null;
 sparkle_builder.workcellGeojson = aoi_feature_edit.aoi_extents_geojson;
+console.log("OUTSIDE FUNCTION PRINT")
 
 sparkle_builder.init = function (options) {
 
