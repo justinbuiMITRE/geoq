@@ -15,7 +15,7 @@ def semanticQueryInfo(request):
         return HttpResponse("Request method is not a GET")
 
 
-def predicateQueryInfo(request)
+def predicateQueryInfo(request):
     if request.method == 'GET':
         #semanticURL
         semanticURL = "holderstring"
