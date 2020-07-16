@@ -39,7 +39,13 @@ sparkle_builder.init = function (options) {
 
 sparkle_builder.buildAccordionPanel = function () {
     sparkle_builder.$title = leaflet_layer_control.buildAccordionPanel(sparkle_builder.$accordion, sparkle_builder.plugin_title);
-
+    $.ajax({
+        url: 'justinbui-GeoQ.mitre.org:8000/ontology/semanticQueryInfo/',
+        success: function (data) {
+            console.log("Success on AJAX call")
+            console.log(data)
+        }
+    });
     var nouns = ['Chinese', 'Airplane', 'Freighter', 'Fighter', 'Length', 'Air Battery', 'Shenyang J-11', 'Width', "Jet"]
     var verbs = ['Has', 'With']
     var descriptor = ['greater than', 'less than', 'equal to']
