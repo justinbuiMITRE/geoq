@@ -1,4 +1,4 @@
-from django.urls import include, re_path
+from django.urls import include, re_path, path
 from django.contrib.auth.decorators import login_required
 #from .views import ProxyListView, ProxyRegisterView, ProxyGetView, ProxyAuxGetView
 from .views import semanticQueryInfo
