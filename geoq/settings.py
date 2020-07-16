@@ -37,7 +37,7 @@ DATABASES = {
         # The following settings are not used with sqlite3:
         'USER': 'geoq',
         'PASSWORD': 'geoq',
-        'HOST': 'db',  # Empty for local through domain sockets or '127.0.0.1' for local through TCP.
+        'HOST': 'localhost',  # Empty for local through domain sockets or '127.0.0.1' for local through TCP.
         'PORT': '5432',  # Set to empty string for default.
     }
 }
