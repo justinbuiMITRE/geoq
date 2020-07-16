@@ -5,7 +5,7 @@ from .views import semanticQueryInfo
 
 urlpatterns = [
     #re_path(r'(?P<url>.*)/$', ProxyListView.as_view(), name='list'),
-    url(r'^semanticQueryInfo/$', views.semanticQueryInfo, name ='semanticQueryInfo'),
+    path('semanticQueryInfo/', views.semanticQueryInfo, name ='semanticQueryInfo'),
     #path('register', login_required(ProxyRegisterView.as_view()),name="register"),
     #path('kmz/(.+)/', ProxyGetView.as_view(),name="getkmz"),
     #path('kmz/(.+)/',ProxyGetView,name="getkmz"),
