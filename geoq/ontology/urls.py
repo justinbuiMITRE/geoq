@@ -1,8 +1,7 @@
 from django.urls import include, re_path
 from django.contrib.auth.decorators import login_required
 #from .views import ProxyListView, ProxyRegisterView, ProxyGetView, ProxyAuxGetView
-import .views
-
+from .views import semanticQueryInfo
 
 urlpatterns = [
     #re_path(r'(?P<url>.*)/$', ProxyListView.as_view(), name='list'),
