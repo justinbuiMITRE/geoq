@@ -44,6 +44,12 @@ sparkle_builder.buildAccordionPanel = function () {
         success: function (data) {
             console.log("Success on AJAX call")
             console.log(data)
+        },
+        error: function (xhr,status,error){
+            console.log("ERROR")
+            console.log(xhr)
+            console.log(status)
+            console.log(error)
         }
     });
     var nouns = ['Chinese', 'Airplane', 'Freighter', 'Fighter', 'Length', 'Air Battery', 'Shenyang J-11', 'Width', "Jet"]
