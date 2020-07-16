@@ -20,7 +20,8 @@ urlpatterns = [
     path('accounts/', include('geoq.accounts.urls')),
     path('proxy/', include('geoq.proxy.urls')),
     path('training/', include('geoq.training.urls', namespace='training')),
-    path('messages/', include('userena.contrib.umessages.urls'), name='userena_messages')
+    path('messages/', include('userena.contrib.umessages.urls'), name='userena_messages'),
+    path('ontology/', include('geoq.ontology.urls'))
     ]
 
 if settings.DEBUG:
