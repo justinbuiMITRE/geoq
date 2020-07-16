@@ -54,7 +54,7 @@ sparkle_builder.buildAccordionPanel = function () {
         }
     });
     console.log("CONFIRMING THIS IS RUNNING")
-    var nouns = ['Chinese', 'Airplane', 'Freighter', 'Fighter', 'Length', 'Air Battery', 'Shenyang J-11', 'Width', "Jet"]
+    var nouns = ['Japanese', 'Airplane', 'Freighter', 'Fighter', 'Length', 'Air Battery', 'Shenyang J-11', 'Width', "Jet"]
     var verbs = ['Has', 'With']
     var descriptor = ['greater than', 'less than', 'equal to']
 
