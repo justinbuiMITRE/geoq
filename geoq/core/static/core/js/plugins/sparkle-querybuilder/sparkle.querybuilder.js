@@ -39,6 +39,7 @@ sparkle_builder.init = function (options) {
 
 sparkle_builder.buildAccordionPanel = function () {
     sparkle_builder.$title = leaflet_layer_control.buildAccordionPanel(sparkle_builder.$accordion, sparkle_builder.plugin_title);
+    console.log("CONFIRMING THIS IS RUNNING")
     $.ajax({
         url: 'justinbui-GeoQ.mitre.org:8000/ontology/semanticQueryInfo/',
         success: function (data) {
