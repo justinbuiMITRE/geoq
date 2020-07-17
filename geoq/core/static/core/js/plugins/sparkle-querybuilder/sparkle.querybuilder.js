@@ -12,7 +12,6 @@ sparkle_builder.$accordion = null;
 sparkle_builder.map = aoi_feature_edit.map;
 sparkle_builder.results_layer_group = null;
 sparkle_builder.workcellGeojson = aoi_feature_edit.aoi_extents_geojson;
-console.log("OUTSIDE FUNCTION PRINT")
 
 sparkle_builder.init = function (options) {
 
@@ -42,7 +41,13 @@ sparkle_builder.buildAccordionPanel = function () {
     sparkle_builder.$title = leaflet_layer_control.buildAccordionPanel(sparkle_builder.$accordion, sparkle_builder.plugin_title);
     console.log("CONFIRMING THIS IS RUNNING")
     $.ajax({
-        url: 'http://justinbui-GeoQ.mitre.org:8000/ontology/semanticQueryInfo/',
+        headers: {
+            accept: 'application/json',
+            "content-type": 'application/sparql-query'
+        },
+        url: 'http://omorrissey-dev:8080/sparql',
+        data: "SELECT * WHERE { ?sub ?pred ?obj . } LIMIT 10",
+
         success: function (data) {
             console.log("Success on AJAX call")
             console.log(data)
