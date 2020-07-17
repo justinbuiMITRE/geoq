@@ -43,8 +43,8 @@ sparkle_builder.buildAccordionPanel = function () {
     $.ajax({
         headers: {
             'accept': 'application/json',
-            "content-type": 'application/sparql-query',
-            "Access-Control-Allow-Origin":"*"
+            "content-type": 'application/sparql-query'
+           
         },
         url: 'http://omorrissey-dev:8080/sparql',
         type: 'POST',
