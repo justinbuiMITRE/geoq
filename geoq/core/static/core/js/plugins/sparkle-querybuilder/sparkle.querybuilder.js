@@ -48,6 +48,7 @@ sparkle_builder.buildAccordionPanel = function () {
         url: 'http://omorrissey-dev:8080/sparql',
         type: 'POST',
         data: "SELECT * WHERE { ?sub ?pred ?obj . } LIMIT 10",
+        dataType: 'jsonp',
 
         success: function (data) {
             console.log("Success on AJAX call")
