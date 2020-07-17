@@ -46,6 +46,7 @@ sparkle_builder.buildAccordionPanel = function () {
             "content-type": 'application/sparql-query'
         },
         url: 'http://omorrissey-dev:8080/sparql',
+        type: 'POST',
         data: "SELECT * WHERE { ?sub ?pred ?obj . } LIMIT 10",
 
         success: function (data) {
